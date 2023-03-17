@@ -3,19 +3,19 @@ package ca.fxco.moreculling.config.cloth;
 import com.google.common.collect.Maps;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.ApiStatus;
 
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-@Environment(EnvType.CLIENT)
+@OnlyIn(Dist.CLIENT)
 public class MoreCullingClothConfigBuilder implements ConfigBuilder {
     private Runnable savingRunnable;
     private Screen parent;

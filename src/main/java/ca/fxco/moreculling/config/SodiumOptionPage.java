@@ -9,8 +9,8 @@ import com.google.common.collect.ImmutableList;
 import me.jellysquid.mods.sodium.client.gui.options.*;
 import me.jellysquid.mods.sodium.client.gui.options.control.CyclingControl;
 import me.jellysquid.mods.sodium.client.gui.options.control.TickBoxControl;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.text.Text;
+import net.minecraftforge.fml.ModList;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -289,13 +289,13 @@ public class SodiumOptionPage {
                     }
                     if (option instanceof ConfigModLimit configModLimit) {
                         optionBuilder.setModLimited(
-                                FabricLoader.getInstance().isModLoaded(configModLimit.getLimitedModId()),
+                                ModList.get().isLoaded(configModLimit.getLimitedModId()),
                                 Text.translatable(configModLimit.getTranslationKey())
                         );
                     }
                     if (option instanceof ConfigModIncompatibility configModIncompatibility) {
                         optionBuilder.setModIncompatibility(
-                                FabricLoader.getInstance().isModLoaded(configModIncompatibility.getIncompatibleModId()),
+                                ModList.get().isLoaded(configModIncompatibility.getIncompatibleModId()),
                                 configModIncompatibility.getMessage()
                         );
                     }

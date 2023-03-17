@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[44,)"
+license = "LGPL-2.1-only"
+
+[[mods]]
+modId = "moreculling"
+version = "${version}"
+displayName = "More Culling"
+displayURL="https://github.com/TexTrueStudio/MoreCulling" #optional
+logoFile="./assets/moreculling/MoreCulling.png" #optional
+credits="FX - PR0CESS" #optional
+authors="TexTrue, ThinkingStudio" #optional
+description = '''
+More Culling unoffical forge port.
+A mod that changes how multiple types of culling are handled in order to improve performance.
+'''
+
+[[dependencies.moreculling]]
+modId = "forge"
+mandatory = true
+versionRange = "[44,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.moreculling]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.3,)"
+ordering = "NONE"
+side = "CLIENT"

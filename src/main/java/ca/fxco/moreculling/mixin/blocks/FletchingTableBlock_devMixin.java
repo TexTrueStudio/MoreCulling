@@ -1,7 +1,6 @@
 package ca.fxco.moreculling.mixin.blocks;
 
 import ca.fxco.moreculling.api.block.MoreBlockCulling;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FletchingTableBlock;
 import net.minecraft.util.math.BlockPos;
@@ -18,7 +17,7 @@ public class FletchingTableBlock_devMixin implements MoreBlockCulling {
 
     @Override
     public boolean usesCustomShouldDrawFace(BlockState state) {
-        return FabricLoader.getInstance().isDevelopmentEnvironment(); // Dev enviroment only
+        return FabricLoader.getInstance().isDevelopmentEnvironment(); // Development Environment only
     }
 
     @Override

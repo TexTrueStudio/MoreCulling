@@ -20,7 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
 
-@Restriction(require = @Condition("sodium"))
+@Restriction(require = @Condition("rubidium"))
 @Mixin(SodiumOptionsGUI.class)
 public class SodiumOptionsGUIMixin extends Screen {
 
