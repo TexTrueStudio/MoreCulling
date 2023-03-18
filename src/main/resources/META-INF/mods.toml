@@ -28,3 +28,17 @@ mandatory = true
 versionRange = "[1.19.3,)"
 ordering = "NONE"
 side = "CLIENT"
+
+[[dependencies.moreculling]]
+modId = "cloth_config"
+mandatory = false
+versionRange = "*"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.moreculling]]
+modId = "rubidium"
+mandatory = false
+versionRange = "*"
+ordering = "NONE"
+side = "CLIENT"
