@@ -6,6 +6,7 @@ import net.minecraft.block.FletchingTableBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
+import net.minecraftforge.fml.loading.FMLLoader;
 import org.spongepowered.asm.mixin.Mixin;
 
 import java.util.Optional;
@@ -17,7 +18,7 @@ public class FletchingTableBlock_devMixin implements MoreBlockCulling {
 
     @Override
     public boolean usesCustomShouldDrawFace(BlockState state) {
-        return FabricLoader.getInstance().isDevelopmentEnvironment(); // Development Environment only
+        return !FMLLoader.isProduction(); // Development Environment only
     }
 
     @Override
