@@ -4,9 +4,10 @@ import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
 import java.util.function.Function;
 
-public class DynamicBooleanBuilder extends AbstractDynamicBuilder<Boolean, DynamicBooleanListEntry> {
+public class DynamicBooleanBuilder extends AbstractDynamicBuilder<Boolean, DynamicBooleanListEntry, DynamicBooleanBuilder> {
     @Nullable
     private Function<Boolean, Text> yesNoTextSupplier = null;
 

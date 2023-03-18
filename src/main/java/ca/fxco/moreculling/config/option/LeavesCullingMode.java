@@ -1,13 +1,13 @@
 package ca.fxco.moreculling.config.option;
 
 import me.shedaniel.clothconfig2.gui.entries.SelectionListEntry;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
 
-@Environment(EnvType.CLIENT)
+@OnlyIn(Dist.CLIENT)
 public enum LeavesCullingMode implements SelectionListEntry.Translatable {
     DEFAULT("options.gamma.default"),
     FAST("options.clouds.fast"),

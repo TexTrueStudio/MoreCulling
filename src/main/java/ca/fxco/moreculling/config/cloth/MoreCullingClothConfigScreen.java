@@ -16,8 +16,7 @@ public class MoreCullingClothConfigScreen extends ClothConfigScreen {
 
     private ClickableWidget resetCacheButton;
 
-    public MoreCullingClothConfigScreen(Screen parent, Text title, Map<Text, ConfigCategory> categoryMap,
-                                        Identifier backgroundLocation) {
+    public MoreCullingClothConfigScreen(Screen parent, Text title, Map<Text, ConfigCategory> categoryMap, Identifier backgroundLocation) {
         super(parent, title, categoryMap, backgroundLocation);
     }
 

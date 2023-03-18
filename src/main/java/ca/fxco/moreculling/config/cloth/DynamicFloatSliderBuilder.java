@@ -4,9 +4,10 @@ import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
 import java.util.function.Function;
 
-public class DynamicFloatSliderBuilder extends AbstractDynamicBuilder<Float, DynamicFloatSliderEntry> {
+public class DynamicFloatSliderBuilder extends AbstractDynamicBuilder<Float, DynamicFloatSliderEntry, DynamicFloatSliderBuilder> {
     private float max;
     private float min;
     private float step;

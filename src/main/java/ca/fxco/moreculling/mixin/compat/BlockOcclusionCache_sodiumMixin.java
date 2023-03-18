@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
-@Restriction(require = @Condition("sodium"))
+@Restriction(require = @Condition("rubidium"))
 @Mixin(BlockOcclusionCache.class)
 public class BlockOcclusionCache_sodiumMixin {
 

@@ -3,9 +3,10 @@ package ca.fxco.moreculling.config.cloth;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Optional;
 import java.util.function.Function;
 
-public class DynamicIntSliderBuilder extends AbstractDynamicBuilder<Integer, DynamicIntSliderEntry> {
+public class DynamicIntSliderBuilder extends AbstractDynamicBuilder<Integer, DynamicIntSliderEntry, DynamicIntSliderBuilder> {
     private int max;
     private int min;
     private Function<Integer, Text> textGetter = null;
